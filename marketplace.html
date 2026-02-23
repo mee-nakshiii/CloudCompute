@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marketplace</title>
+</head>
+<body>
+    <h2>Available GPUs</h2>
+
+    {% for gpu in gpus %}
+        <div style="border:1px solid black; padding:10px; margin:10px;">
+            <p><strong>Model:</strong> {{ gpu[2] }}</p>
+            <p><strong>VRAM:</strong> {{ gpu[3] }} GB</p>
+            <p><strong>Price per hour:</strong> ${{ gpu[4] }}</p>
+            <a href="/rent/{{ gpu[0] }}">Rent Now</a>
+        </div>
+    {% endfor %}
+
+    <br>
+    <a href="/provider_dashboard">Go to Provider Dashboard</a>
+</body>
+</html>
