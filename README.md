@@ -1,6 +1,6 @@
 # CloudCompute: GPU Marketplace 🚀
 
-**Developed by:** Harsha (Lead Developer)
+**Developed by:** 
 
 ## 📌 Project Overview
 CloudCompute is a full-stack web application designed to bridge the gap between AI researchers needing compute and providers with idle hardware. Users can browse and rent high-performance GPUs, while providers can list their hardware for rent.
