@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marketplace - Cloud Compute</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h2 class="mb-4">Available GPUs for Rent</h2>
+        
+        <div class="row">
+            {% for gpu in gpus %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">{{ gpu[2] }}</h5> <p class="card-text"><strong>VRAM:</strong> {{ gpu[3] }} GB</p>
+                        <p class="card-text text-success"><strong>${{ gpu[4] }}/hour</strong></p>
+                        <a href="/rent/{{ gpu[0] }}" class="btn btn-outline-primary w-100">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="/provider_dashboard" class="btn btn-secondary">Go to Provider Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>
