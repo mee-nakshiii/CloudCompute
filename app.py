@@ -9,7 +9,7 @@ app.secret_key = "supersecret"
 app.config["MYSQL_HOST"] = "localhost"
 app.config["MYSQL_USER"] = "root"
 # CHANGE THE LINE BELOW TO YOUR MYSQL PASSWORD
-app.config["MYSQL_PASSWORD"] = "enter_your_password_here"
+app.config["MYSQL_PASSWORD"] = "mymas123"
 app.config["MYSQL_DB"] = "cloud_gpu"
 
 mysql = MySQL(app)
